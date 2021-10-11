@@ -6,7 +6,9 @@ header{
 }
 h1 a {
     color:#A0522D;
+    text-decoration:none;
 }
 div a {
     color:#4B0082;
+    text-decoration:none;
 }

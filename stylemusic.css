@@ -1,0 +1,18 @@
+body {
+    background-color:#F0E68C;
+}
+h1 {
+    background-color:#F4A460;
+    color:#800080;
+}
+h3 a {
+    color:#A52A2A;
+    text-decoration:none;
+}
+div {
+    word-spacing:50px;
+    font-weight:900;
+}
+h3 {
+    background-color:#FFFFE0;
+}
