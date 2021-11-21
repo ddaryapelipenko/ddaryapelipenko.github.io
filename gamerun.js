@@ -13,23 +13,15 @@ function findZero(state)
 export function actions(state)
 {
     const [i, j] = findZero(state)
-    if(i === 0 && j === 0)
-       return [up, left]
-    else if(i === 0 && j === 2)
-       return [up, right]
-    else if(i === 2 && j === 0)
-       return [down, left]
-    else if(i === 2 && j === 2)
-       return [down, right]
-    else if(i === 0)
+    if(i === 0)
        return[up, left, right]
     else if(i === 2)
        return[down, left, right]
     else if(j === 0)
-       return [up, down, right]
+       return [up, down, left]
     else if(j === 2)
         return [up, down, right]
-    else
+    else if(j === 1 && j === 1)
         return [up, down, left, right]
 }
 
