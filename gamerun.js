@@ -21,7 +21,7 @@ export function actions(state)
        return [up, down, left]
     else if(j === 2)
         return [up, down, right]
-    else if(j === 1 && j === 1)
+    else if(i === 1 && j === 1)
         return [up, down, left, right]
 }
 
@@ -31,7 +31,7 @@ function successor(state, action)
     const [i, j] = findZero(state)
     if(action === left)
     {
-        newS[i][j] = state[i][j+1]
+        newS[i][j] = state[i][j + 1]
         newS[i][j + 1] = 0
     }
     else if(action === right)
