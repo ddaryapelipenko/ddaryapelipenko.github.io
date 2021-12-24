@@ -40,7 +40,7 @@ export class GameView
     constructor(state)
     {
         ctx.clearRect(0, 0, canvas.width, canvas.height)
-        this.board = [new Array(d), new Array (d), new Array (d)]
+        this.board = [new Array(d), new Array(d), new Array(d)]
         for(let i = 0; i < d; i++)
         {
             for(let j = 0; j < d; j++)
